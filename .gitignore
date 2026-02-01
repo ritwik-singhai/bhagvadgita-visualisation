@@ -1,0 +1,12 @@
+node_modules
+dist
+venv
+__pycache__
+.DS_Store
+.env
+
+# Large data files (>100MB)
+data/verses_with_embeddings_openai.json
+data/verses_with_embeddings.json
+data/verses_visualization.json
+data/verses_visualization_v2.json

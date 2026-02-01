@@ -1,0 +1,113 @@
+/*
+ * Question Input Styles
+ */
+
+.question-input-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.question-input-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.question-input-container.focused {
+    border-color: var(--color-saffron);
+    box-shadow: 0 0 0 4px rgba(255, 153, 51, 0.15);
+}
+
+.question-icon {
+    font-size: var(--text-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.loading-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-gray-300);
+    border-top-color: var(--color-saffron);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.question-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    outline: none;
+    padding: var(--space-2) 0;
+}
+
+.question-input::placeholder {
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+@media (min-width: 640px) {
+    .question-input {
+        font-size: var(--text-lg);
+    }
+}
+
+.clear-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-gray-200);
+    color: var(--color-gray-600);
+    font-size: var(--text-xs);
+    transition: all var(--transition-fast);
+}
+
+.clear-button:hover {
+    background: var(--color-gray-300);
+}
+
+[data-theme="dark"] .clear-button {
+    background: var(--color-gray-700);
+    color: var(--color-gray-300);
+}
+
+.search-button {
+    flex-shrink: 0;
+    padding: var(--space-2) var(--space-5);
+}
+
+@media (max-width: 480px) {
+    .search-button span {
+        display: none;
+    }
+}
+
+.question-hint {
+    margin-top: var(--space-2);
+    text-align: center;
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    font-style: italic;
+}

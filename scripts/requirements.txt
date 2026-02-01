@@ -1,0 +1,12 @@
+requests>=2.31.0
+ollama>=0.1.0
+umap-learn>=0.5.5
+scikit-learn>=1.4.0
+numpy>=1.26.0
+tqdm>=4.66.0
+networkx>=3.2.0
+python-louvain>=0.16
+hdbscan>=0.8.33
+scipy>=1.11.0
+openai>=1.0.0
+python-dotenv>=1.0.0

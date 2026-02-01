@@ -1,0 +1,113 @@
+/*
+ * Daily Verse Styles
+ */
+
+.daily-verse {
+    text-align: center;
+    padding: var(--space-8);
+    background: var(--color-bg-elevated);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    animation: fadeInUp var(--transition-slow) ease-out;
+}
+
+.daily-verse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-6);
+}
+
+.daily-verse-label {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    color: var(--color-saffron);
+    background: rgba(255, 153, 51, 0.1);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+}
+
+.daily-verse-ref {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+.daily-verse-content {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.daily-verse-sanskrit {
+    font-family: var(--font-sanskrit);
+    font-size: var(--text-xl);
+    line-height: var(--leading-relaxed);
+    color: var(--color-gold);
+    margin-bottom: var(--space-4);
+}
+
+@media (min-width: 768px) {
+    .daily-verse-sanskrit {
+        font-size: var(--text-2xl);
+    }
+}
+
+.daily-verse-translation {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    font-style: italic;
+    line-height: var(--leading-relaxed);
+    color: var(--color-text);
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .daily-verse-translation {
+        font-size: var(--text-xl);
+    }
+}
+
+.daily-verse-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+}
+
+@media (min-width: 640px) {
+    .daily-verse-footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.daily-verse-topic {
+    font-family: var(--font-ui);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+}
+
+.daily-verse-link {
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-saffron);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.daily-verse-link:hover {
+    color: var(--color-saffron-dark);
+    text-decoration: underline;
+}
