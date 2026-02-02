@@ -165,5 +165,3 @@ The visualization automatically clusters verses into semantic concepts:
 This project is for understanding the nuances of language and stastical modelling for ancient texts. 
 
 ---
-
-**ॐ शान्ति शान्ति शान्तिः**
