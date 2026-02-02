@@ -162,7 +162,7 @@ The visualization automatically clusters verses into semantic concepts:
 
 ## License
 
-This project is for educational purposes. The Bhagavad Gita is an ancient text in the public domain.
+This project is for understanding the nuances of language and stastical modelling for ancient texts. 
 
 ---
 
