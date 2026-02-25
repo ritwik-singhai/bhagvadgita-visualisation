@@ -2,7 +2,7 @@
 
 An interactive 3D visualization of all 700+ verses of the Bhagavad Gita, semantically clustered using AI embeddings.
 
-![Visualization Preview](preview.png)
+[![Visualization Preview](preview.png)](https://ritwiksinghai.com/bhagvadgita-visualisation/)
 
 ## Features
 
